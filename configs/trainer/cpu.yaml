@@ -1,0 +1,6 @@
+defaults:
+  - trainer_schema
+   
+max_epochs: 32
+accelerator: cpu
+devices: 1
