@@ -1,5 +1,5 @@
 defaults:
-  - mnist_classification_training_task_schema
+  - mnist_classification_training_task
   - model: simple_model
   - optimizer: adam
   - loss_function: cross_entropy_loss_function_schema
