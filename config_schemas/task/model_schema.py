@@ -18,5 +18,10 @@ class SimpleModelConfig(ModelConfig):
     
 
 def setup_config() -> None:
+    backbone_schema.setup_config()
+    adapter_schema.setup_config()
+    head_schema.setup_config()
+    
     cs = ConfigStore.instance()
     cs.store(group="task/model", name="simple_model_schema", node=SimpleModelConfig)
+    
