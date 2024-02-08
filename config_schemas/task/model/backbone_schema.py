@@ -28,7 +28,7 @@ class ResNet50BackboneConfig(BackboneConfig):
 
 def setup_config() -> None:
     cs = ConfigStore.instance()
-    cs.store(group="task/model", name="resnet18_schema", node=ResNet18BackboneConfig)
-    cs.store(group="task/model", name="resnet34_schema", node=ResNet34BackboneConfig)
-    cs.store(group="task/model", name="resnet50_schema", node=ResNet50BackboneConfig)
+    cs.store(group="task/model/backbone", name="resnet18_schema", node=ResNet18BackboneConfig)
+    cs.store(group="task/model/backbone", name="resnet34_schema", node=ResNet34BackboneConfig)
+    cs.store(group="task/model/backbone", name="resnet50_schema", node=ResNet50BackboneConfig)
     
